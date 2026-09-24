@@ -1,9 +1,11 @@
 __pycache__
+.github
+.idea
 .venv
 .vscode
 data/subtitles_vtt
 data/transcripts_txt
 logs
-.idea
-uv.lock
+.python-version
 pyproject.toml
+uv.lock
