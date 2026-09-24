@@ -5,10 +5,11 @@ from pathlib import Path
 
 
 def main():
-    # Add the app/ folder to path so guru_project and guru_app are findable
+    # Add the app/ folder to path so config and app are findable
     sys.path.insert(0, str(Path(__file__).resolve().parent / 'app'))
+    sys.path.insert(0, str(Path(__file__).resolve().parent / 'config'))
 
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'guru_project.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

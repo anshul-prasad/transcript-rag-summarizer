@@ -35,7 +35,7 @@ password = os.environ.get('ADMIN_PASSWORD', 'changeme123'); \
 User.objects.filter(username='admin').exists() or User.objects.create_superuser('admin', email, password); \
 print('Superuser ready'); \
 \" 2>&1 && \
-  PYTHONPATH=/app/app gunicorn guru_project.wsgi:application \
+  PYTHONPATH=/app/app gunicorn config.wsgi:application \
     --bind 0.0.0.0:7860 \
     --workers 2 \
     --timeout 120 \
