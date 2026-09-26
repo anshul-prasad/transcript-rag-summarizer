@@ -18,7 +18,7 @@ for p in [str(ROOT), str(ROOT / 'app')]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from config import FILE_PKL, TRANSCRIPTS_PKL, MAX_CONTEXT_TOKENS, CHUNK_FAISS, CHUNK_PKL, ENCODER, MODEL, GROQ_API_KEY, SYSTEM_PROMPT
+from rag_config import FILE_PKL, TRANSCRIPTS_PKL, MAX_CONTEXT_TOKENS, CHUNK_FAISS, CHUNK_PKL, ENCODER, MODEL, GROQ_API_KEY, SYSTEM_PROMPT
 from src.generate_response import Response
 from src.retrieve_context import Context
 from src.tokenizer import Tokenizer
