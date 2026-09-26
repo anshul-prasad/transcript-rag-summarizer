@@ -6,6 +6,7 @@ __pycache__
 data/subtitles_vtt
 data/transcripts_txt
 logs
+.env
 .python-version
 pyproject.toml
 uv.lock
