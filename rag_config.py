@@ -19,7 +19,7 @@ RESPONSE_FILE              = Path("outputs/generated_response.txt")
 COOKIES_FILE               = Path("src/youtube_cookies.txt")
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
-MODEL        = "llama-3.1-8b-instant"
+MODEL        = "openai/gpt-oss-120b"
 MAX_CONTEXT_TOKENS = 4500
 
 # Token
