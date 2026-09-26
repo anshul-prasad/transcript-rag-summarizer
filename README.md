@@ -72,7 +72,7 @@ Core runtime flow:
 │   ├── token.py
 │   └── vtt_to_txt.py
 ├── app.py
-├── config.py
+├── rag_config.py
 ├── main.py
 ├── Dockerfile
 ├── pyproject.toml
@@ -103,7 +103,7 @@ Environment variables read by the app:
 - `GITHUB_TOKEN`: optional; present in config but not required for runtime flow
 - `HF_API_TOKEN`: optional; present in config but not required for runtime flow
 
-Important runtime paths are defined in `config.py`, including:
+Important runtime paths are defined in `rag_config.py`, including:
 - `data/file_paths.pkl`
 - `data/transcripts.pkl`
 - `data/transcript_index.faiss`
